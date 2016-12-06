@@ -1,0 +1,96 @@
+a,a:visited {
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    text-decoration: none;
+    color: #333;
+    outline: 0
+}
+a:hover,a:active{
+    text-decoration:none;
+}
+
+.bs-docs-nav{
+    background-color:#20B585; 
+}
+.bs-docs-nav .navbar-brand,
+.bs-docs-nav .navbar-nav>li>a {
+    font-weight: 500;
+    color: #fff
+}
+
+.bs-docs-nav .navbar-nav>li>a:hover,
+.bs-docs-nav .navbar-nav>.active>a,
+.bs-docs-nav .navbar-nav>.active>a:hover {
+    color: #463265;
+    background-color: #fcfcfc
+}
+
+.bs-docs-nav .navbar-toggle .icon-bar {
+    background-color: #fff
+}
+
+.bs-docs-nav .navbar-header .navbar-toggle {
+    border-color: #fff
+}
+
+.bs-docs-nav .navbar-header .navbar-toggle:hover,.bs-docs-nav .navbar-header .navbar-toggle:focus {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9
+}
+
+#main{
+    padding-top:80px;
+}
+.sider-bar{
+    border-right: 1px dashed #d1d1d1;
+}
+.sort-bar dt{
+    margin-bottom: 15px;
+    padding-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #e1e1e1; 
+}
+.sort-bar dd{
+
+}
+.sort-bar dd a{
+    border-radius: 15px;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+    margin: 2px 0;
+    display: block;
+}
+.sort-bar dd a:not([class*=active]):hover {
+    cursor: pointer;
+    background: #f5f5f5
+}
+.sort-bar dd a:hover{
+    text-decoration:none;
+}
+.sort-bar dd a.active{
+    background: #f2f2f2;
+    color: #4eaa4c;
+    font-weight: 500;
+}
+
+.user-info{
+    text-align:center;
+	margin-bottom:20px;
+}
+.user-info .icon img{
+    width:100px;
+	height:100px;
+}
+.user-info .name {
+    font-size: 1.8rem;
+    line-height: 3;
+}
+
+footer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 1.4rem;
+	line-height: 2;
+	color: #666;
+}
