@@ -33,10 +33,6 @@ a:hover,a:active{
     border-color: #fff
 }
 
-.bs-docs-nav .navbar-header .navbar-toggle:hover,.bs-docs-nav .navbar-header .navbar-toggle:focus {
-    background-color: #f9f9f9;
-    border-color: #f9f9f9
-}
 
 #main{
     padding-top:80px;
@@ -50,10 +46,9 @@ a:hover,a:active{
     line-height: 30px;
     border-bottom: 1px solid #e1e1e1; 
 }
-.sort-bar dd{
 
-}
-.sort-bar dd a{
+.sort-bar dd a,
+.sort-bar dd a:visited{
     border-radius: 15px;
     height: 28px;
     line-height: 28px;
@@ -61,12 +56,13 @@ a:hover,a:active{
     margin: 2px 0;
     display: block;
 }
+.sort-bar dd a:hover,
+.sort-bar dd a:active{
+    text-decoration:none!important;
+}
 .sort-bar dd a:not([class*=active]):hover {
     cursor: pointer;
-    background: #f5f5f5
-}
-.sort-bar dd a:hover{
-    text-decoration:none;
+    background: #f5f5f5;
 }
 .sort-bar dd a.active{
     background: #f2f2f2;
@@ -87,10 +83,33 @@ a:hover,a:active{
     line-height: 3;
 }
 
+.info-me{
+    margin-bottom:80px;
+}
+.hometown .article p img{
+    max-width:100%;
+    margin:0 auto;
+    display: block;
+}
+
+.article{
+    margin:8px 0 18px;
+}
+
+.article h2{
+    font-family: Arial,"Microsoft Yahei";
+    font-size: 18px;
+    color: #333;
+}
+.article p{
+    color: rgb(102, 102, 102);
+    font-family: "新宋";
+}
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	font-size: 1.4rem;
 	line-height: 2;
 	color: #666;
+    background-color:#f8f8f8;
 }
