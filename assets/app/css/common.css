@@ -86,16 +86,10 @@ a:hover,a:active{
 .info-me{
     margin-bottom:80px;
 }
-.hometown .article p img{
-    max-width:100%;
-    margin:0 auto;
-    display: block;
-}
 
 .article{
     margin:8px 0 18px;
 }
-
 .article h2{
     font-family: Arial,"Microsoft Yahei";
     font-size: 18px;
@@ -104,7 +98,14 @@ a:hover,a:active{
 .article p{
     color: rgb(102, 102, 102);
     font-family: "新宋";
+    line-height:1.8;
 }
+.article p img{
+    max-width:100%;
+    margin:0 auto;
+    display: block;
+}
+
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
