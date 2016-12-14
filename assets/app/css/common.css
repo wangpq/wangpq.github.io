@@ -79,9 +79,36 @@ a:hover,a:active{
 	height:100px;
 }
 .user-info .name {
-    font-size: 1.8rem;
+    font-size: 26px;
+    line-height: 30px;
     line-height: 3;
 }
+.user-info .description{
+    color:#767676;
+}
+
+.vcard-details{
+    padding:28PX 0 12px 0;
+}
+.vcard-details li{
+    list-style:none;
+    display:block;
+    padding:4px 0;
+}
+.vcard-detail li span,
+.vcard-detail li a{
+    display: inline-block;          
+    vertical-align:middle; 
+}
+.vcard-detail li a,
+.vcard-detail li a:visited{
+    color: #4078c0;
+}
+.vcard-detail i.glyphicon {
+    color:#999;
+    vertical-align:middle;
+}
+
 
 .info-me{
     margin-bottom:80px;
@@ -113,4 +140,10 @@ footer{
 	line-height: 2;
 	color: #666;
     background-color:#f8f8f8;
+}
+
+@media screen and (max-width: 990px) {
+    .sider-bar {
+        border-right: none;
+    }
 }
