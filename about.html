@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">王平启的个人空间</a>
+      <a href="/" class="navbar-brand">对不起我爱你</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -102,7 +102,11 @@
             <div class="info-me" id="infoMe">
                 <div class="article">
                     <h2>大家好</h2>
-                    <p>前端一枚,介绍稍后...</p>
+					<p>我叫王平启，一名奋斗在一线的前端开发攻城狮一枚。</p>
+					<p>长得不高，不帅，当然也不胖。目前就职于国美在线。</p>
+					<p>没有过多的兴趣和爱好，有时出去逛逛，闲时看看书，喜欢旅游！喜欢安静!大多数时候呢，都在苦逼地上班，呵呵！</p>
+					<p>最大的愿望，自己技术越来越牛逼，有个关心自己的老婆。</p>
+
                 </div>
             </div>
 
@@ -114,7 +118,7 @@
                 </div>
 
                 <div class="article">
-                    <h2>大乌江峡谷风光</h2>
+                    <h2>大乌江风景名胜区</h2>
                     <p><img class="lazy" data-original="assets/app/images/大乌江峡谷风光.jpg" alt="大乌江峡谷风光" title="大乌江峡谷风光" ></p>
                     <p>大乌江是贵州省省级风景名胜区和千里乌江画廊的首要观光区。这里有奇险幽深峡谷、莽莽原始森林、稀有珍奇动物、汹涌江水、奇形怪石，有难解的历史之谜、新奇的山民风情、红色的革命经历。大乌江是中原通往黔中腹地的黄金水道，汇粹高原古朴雄奇，汇集高原丰富资源，是开发、历险、回归自然的奇佳选择！ ……</p>
                     <p><img class="lazy" data-original="assets/app/images/构皮滩电站2.jpg" alt="构皮滩电站" title="构皮滩电站"></p>
@@ -129,6 +133,14 @@
                     <p>贵州高原千岛湖     从构皮滩电站大坝顺乌江支流——敖溪河而上，紧挨着的是敖溪休闲文化旅游区：一望无际的平桃原始森林，林中古木参天，有野生猴群嬉戏其中。还可以去欣赏明代四川巡抚、著名学者钱邦芑隐居7年留下的松烟他山摩岩石刻、敖溪招隐山摩崖石刻。     构皮滩电站建成后，这里将形成贵州境内最大的高原湖，库区将出现的34个孤岛，一半在这个区域，再加上沿岸的十多个半岛……</p>
                     
                 </div>
+
+
+                <div class="article">
+                    <h2>老林河风景区</h2>
+                    <p><img class="lazy" data-original="http://www.gz.xinhuanet.com/ztpd/2011-04/26/xin_22304082616578902387036.jpg" alt="老林河风景区" title="老林河风景区"></p>
+                    <p>地处我国西南黔北南陲美丽的余庆县关兴镇7.5公里高炉村、为乌江河谷阶地，距大乌江码头20公里，面积约7平方公里，距离余庆县城80公里左右，周边无工业工厂，无污染。可以说是一个真正绿色环保的天然氧吧。</p>  
+                </div>
+
 
                 <div class="article">
                     <h2>团结湖</h2>
@@ -157,6 +169,18 @@
 	</div>	
 </footer>
 
+<!-- 返回顶部 -->
+<section class="wp-opt-area">
+    <a href="javascript:;" class="wp-btn-top" title="返回顶部">
+        <i class="glyphicon glyphicon-arrow-up" title="返回顶部"></i>
+    </a>
+    <a href="javascript:;" class="wp-btn-down" title="跳到底部">
+        <i class="glyphicon glyphicon-arrow-down" title="跳到底部"></i>
+    </a>
+    <span href="javascript:;" class="wp-show-hide">
+        <i class="glyphicon glyphicon-arrow-right" title="收起"></i>
+    </span>
+</section>
 	
 <script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>	
@@ -173,6 +197,38 @@ $(function() {
         $("body,html").animate({
             scrollTop: $(target).offset().top-70
         },250); 
+    })
+
+
+    $(".wp-opt-area").on("click","a",function(){
+        var index=$(this).index();
+        if(index==0) {
+            $("body,html").animate({
+                scrollTop: 0
+            },250); 
+        }else{
+            $("body,html").animate({
+                scrollTop: $("footer").offset().top+ $("footer").outerHeight()
+            },250); 
+        }
+    })
+
+
+    $(".wp-opt-area .wp-show-hide").on("click",function(){
+        var self=$(this)
+          , hide=self.data("hide");
+        if(hide==="false" || !hide){
+            hide=self.data("hide","true");
+            $(".wp-opt-area a").fadeOut("fase");
+            self.find("i").attr("title","展开").removeClass("glyphicon-arrow-right").addClass("glyphicon-arrow-left");
+
+        }else{
+            hide=self.data("hide","false");
+            $(".wp-opt-area a").fadeIn("fase");
+            self.find("i").attr("title","收起").removeClass("glyphicon-arrow-left").addClass("glyphicon-arrow-right");;  
+        }
+        
+      
     })
 
 });

@@ -75,7 +75,6 @@ a:hover,a:active{
 	margin-bottom:20px;
 }
 .user-info .icon img{
-    width:100px;
 	height:100px;
 }
 .user-info .name {
@@ -115,7 +114,7 @@ a:hover,a:active{
 }
 
 .article{
-    margin:8px 0 18px;
+    margin:28px 0 40px;
 }
 .article h2{
     font-family: Arial,"Microsoft Yahei";
@@ -123,9 +122,13 @@ a:hover,a:active{
     color: #333;
 }
 .article p{
-    color: rgb(102, 102, 102);
-    font-family: "新宋";
+    color: #646464;
+    font-family:Microsoft YaHei ,SimSun,Arial,Helvetica,sans-serif;
     line-height:1.8;
+}
+.article p:first-of-type {
+color: #b28a00!important;
+font-size: 16px;
 }
 .article p img{
     max-width:100%;
@@ -141,6 +144,67 @@ footer{
 	color: #666;
     background-color:#f8f8f8;
 }
+
+
+/** 返回顶部 **/
+.wp-opt-area{
+    position: fixed;
+    right: 0;
+    bottom: 5%;
+    z-index: 20;
+    width: 32px;
+}
+.wp-opt-area i{
+   font-size:18px;
+   font-style: normal;
+   color:#20B585;
+   vertical-align:middle;
+   text-align: center;  
+}
+.wp-opt-area a,
+.wp-opt-area a:visited{
+    display:block;
+    width: 28px;
+    height: 28px;
+    padding:2px;
+    margin-right:0;
+    margin-bottom:4px;
+    text-align: center;
+    line-height: 18px;
+    color:#333;
+    border: 2px solid #20B585;
+    border-radius:2px;
+}
+.wp-opt-area a:active{
+    border: 2px solid #20B585;
+    background-color: #20B585;
+    color:#fff;
+}
+.wp-opt-area a:active i{
+    color:#fff;
+}
+.wp-opt-area .wp-show-hide{
+    display:block;
+    width: 30px;
+    height: 30px;
+    padding:0;
+    margin-bottom:4px;
+    margin-right:2px;
+    line-height: 28px;
+    text-align: center;
+    cursor:pointer;
+}
+.wp-opt-area .wp-show-hide i{
+    font-size:18px;
+    color:#20B585;
+}
+.wp-opt-area .wp-show-hide:active{
+    background-color: #20B585;
+}
+.wp-opt-area .wp-show-hide:active i{
+    color:#fff
+}
+
 
 @media screen and (max-width: 990px) {
     .sider-bar {
