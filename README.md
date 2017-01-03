@@ -1,2 +1,2 @@
 # wangpq.github.io
-测试
+静态博客测试
