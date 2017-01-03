@@ -3,7 +3,7 @@ a,a:visited {
     transition: color .3s;
     text-decoration: none;
     color: #333;
-    outline: 0
+    outline: 0;
 }
 a:hover,a:active{
     text-decoration:none;
@@ -17,22 +17,18 @@ a:hover,a:active{
     font-weight: 500;
     color: #fff
 }
-
 .bs-docs-nav .navbar-nav>li>a:hover,
 .bs-docs-nav .navbar-nav>.active>a,
 .bs-docs-nav .navbar-nav>.active>a:hover {
     color: #463265;
     background-color: #fcfcfc
 }
-
 .bs-docs-nav .navbar-toggle .icon-bar {
     background-color: #fff
 }
-
 .bs-docs-nav .navbar-header .navbar-toggle {
     border-color: #fff
 }
-
 
 #main{
     padding-top:80px;
@@ -40,13 +36,58 @@ a:hover,a:active{
 .sider-bar{
     border-right: 1px dashed #d1d1d1;
 }
+@media screen and (max-width: 990px) {
+    .sider-bar {
+        border-right: none;
+    }
+}
+
+/* 左上方信息 start*/
+.user-info{
+    text-align:center;
+	margin-bottom:20px;
+}
+.user-info .icon img{
+	height:100px;
+}
+.user-info .name {
+    font-size: 26px;
+    line-height: 30px;
+    line-height: 3;
+}
+.user-info .description{
+    color:#767676;
+}
+.vcard-details{
+    padding:28PX 0 12px 0;
+}
+.vcard-details li{
+    list-style:none;
+    display:block;
+    padding:4px 0;
+}
+.vcard-detail li span,
+.vcard-detail li a{
+    display: inline-block;          
+    vertical-align:middle; 
+}
+.vcard-detail li a,
+.vcard-detail li a:visited{
+    color: #4078c0;
+}
+.vcard-detail i.glyphicon {
+    color:#999;
+    vertical-align:middle;
+}
+/* 左上方信息 end*/
+
+/* 左侧分类栏 start*/
 .sort-bar dt{
     margin-bottom: 15px;
     padding-left: 10px;
     line-height: 30px;
     border-bottom: 1px solid #e1e1e1; 
 }
-
 .sort-bar dd a,
 .sort-bar dd a:visited{
     border-radius: 15px;
@@ -69,50 +110,14 @@ a:hover,a:active{
     color: #4eaa4c;
     font-weight: 500;
 }
+/* 左侧分类栏 end*/
 
-.user-info{
-    text-align:center;
-	margin-bottom:20px;
-}
-.user-info .icon img{
-	height:100px;
-}
-.user-info .name {
-    font-size: 26px;
-    line-height: 30px;
-    line-height: 3;
-}
-.user-info .description{
-    color:#767676;
-}
-
-.vcard-details{
-    padding:28PX 0 12px 0;
-}
-.vcard-details li{
-    list-style:none;
-    display:block;
-    padding:4px 0;
-}
-.vcard-detail li span,
-.vcard-detail li a{
-    display: inline-block;          
-    vertical-align:middle; 
-}
-.vcard-detail li a,
-.vcard-detail li a:visited{
-    color: #4078c0;
-}
-.vcard-detail i.glyphicon {
-    color:#999;
-    vertical-align:middle;
-}
-
-
+/* 右侧自我介绍 */
 .info-me{
     margin-bottom:80px;
 }
 
+/* 右侧段落 */
 .article{
     margin:28px 0 40px;
 }
@@ -127,15 +132,19 @@ a:hover,a:active{
     line-height:1.8;
 }
 .article p:first-of-type {
-color: #b28a00!important;
-font-size: 16px;
+	color: #b28a00!important;
+	font-size: 16px;
 }
 .article p img{
-    max-width:100%;
+    width:100%;
     margin:0 auto;
     display: block;
 }
-
+.article p img.auto{
+    width:auto;
+    max-width:100%;
+}
+/* 页脚 */
 footer{
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -146,7 +155,7 @@ footer{
 }
 
 
-/** 返回顶部 **/
+/* 返回顶部 */
 .wp-opt-area{
     position: fixed;
     right: 0;
@@ -206,8 +215,3 @@ footer{
 }
 
 
-@media screen and (max-width: 990px) {
-    .sider-bar {
-        border-right: none;
-    }
-}

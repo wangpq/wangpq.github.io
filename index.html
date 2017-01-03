@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/" class="navbar-brand">对不起我爱你</a>
+      <a href="/" class="navbar-brand">有你真好</a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -36,7 +36,7 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://my.oschina.net/wangpq520/home" target="_blank">博客</a></li>
+        <li><a href="http://www.jianshu.com/users/95db38aba902/timeline" target="_blank">博客</a></li>
       </ul>
     </nav>
   </div>
@@ -49,11 +49,11 @@
 		    <div class="user-info">
 				<div class="icon">
 					<a href="https://my.oschina.net/wangpq520/home" class="Img" target="_blank">
-					    <img src="assets/app/images/5467011.jpg" align="absmiddle" alt="对不起我爱你" title="对不起我爱你" class="LargePortrait">
+					    <img src="assets/app/images/5467011.jpg" align="absmiddle" alt="有你真好" title="有你真好" class="LargePortrait">
 					</a>
 				</div>  
 				<div class="name">
-					<a href="https://my.oschina.net/wangpq520/home" target="_blank">对不起我爱你</a>
+					<a href="https://my.oschina.net/wangpq520/home" target="_blank">Mighty Men</a>
 					<a href="https://my.oschina.net/wangpq520/home" target="_blank"><i class="icon-svg icon-home"></i></a>
 				</div>
 				<div class="description">
@@ -92,13 +92,41 @@
 		
 			<dl class="sort-bar">
 			    <dt class="hd">分类</dt>
-			    <dd class="dd">
+			    <dd class="bd">
+				    <nav>
+					    <a href="#vuejs">Vue.js</a>
+					    <a href="#react">react</a>
+					  </nav>
+				</dd>
 				</dt>
 			</dl>
 			
 		</div>
 		<div class="col-md-9">
-         首页内容更新中
+        <div class="index" id="index">
+            <div class="article" id="vuejs">
+                <h2>Vue.js </h2>
+                <p>
+                  <img class="lazy auto" data-original="http://cn.vuejs.org/images/logo.png" alt="vuejs" title="vuejs">
+                </p>
+                <p>Vue.js（读音 /vjuː/, 类似于 view） 是一套构建用户界面的 渐进式框架。与其他重量级框架不同的是，Vue 采用自底向上增量开发的设计。Vue 的核心库只关注视图层，并且非常容易学习，非常容易与其它库或已有项目整合。另一方面，Vue 完全有能力驱动采用单文件组件和 Vue 生态系统支持的库开发的复杂单页应用。</p>
+                <p>Vue.js 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。</p>
+                <p>如果你是有经验的前端开发者，想知道 Vue.js 与其它库/框架的区别，查看对比其它框架。</p>
+                <p>更多，请查看Vue.js<a href="http://cn.vuejs.org/">官网</a></p>
+            </div>
+
+            <div class="article" id="react">
+                <h2>react</h2>
+                <p>
+                  <img class="lazy auto" data-original="http://reactjs.cn/react/img/logo.svg" alt="react" title="react">React
+                </p>
+                <p>React是由工作在Facebook的优秀程序员开发出来的用于开发用户交互界面的JS库。其源码由Facebook和社区优秀的程序员维护，因此其背后有着非常强大的技术团队给予技术支持。React带来了很多新的东西，例如组件化、JSX、虚拟DOM等。其提供的虚拟DOM使得我们渲染组件呈现非常之快，让我们从频繁操作DOM的繁重工作之中解脱。了解React的人都知道，它做的工作更多偏重于MVC中的V层，结合其它如Flux等一起，你可以非常容易构建强大的应用。</p>
+                <p>如果你是有经验的前端开发者，想知道 Vue.js 与其它库/框架的区别，查看对比其它框架。</p>
+                <p>更多，请查看Vue.js<a href="http://reactjs.cn/react/docs/getting-started-zh-CN.html">官网</a></p>
+            </div>
+
+
+		    </div>
 		</div>
 	</div>
 </div>		
@@ -113,9 +141,22 @@
 	</div>	
 </footer>
 
+<!-- 返回顶部 -->
+<section class="wp-opt-area">
+    <a href="javascript:;" class="wp-btn-top" title="返回顶部">
+        <i class="glyphicon glyphicon-arrow-up" title="返回顶部"></i>
+    </a>
+    <a href="javascript:;" class="wp-btn-down" title="跳到底部">
+        <i class="glyphicon glyphicon-arrow-down" title="跳到底部"></i>
+    </a>
+    <span href="javascript:;" class="wp-show-hide">
+        <i class="glyphicon glyphicon-arrow-right" title="收起"></i>
+    </span>
+</section>
 	
 <script type="text/javascript" src="assets/app/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>	
-
+<script type="text/javascript" src="assets/app/js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="assets/app/js/jquery.common.js"></script>
 </body>
 </html>
