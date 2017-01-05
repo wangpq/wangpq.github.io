@@ -8,26 +8,17 @@ a,a:visited {
 a:hover,a:active{
     text-decoration:none;
 }
-
-.bs-docs-nav{
-    background-color:#20B585; 
+.wp-nav{
+    background-color: #fff;
+    border-bottom:1px solid #f0f0f0;
 }
-.bs-docs-nav .navbar-brand,
-.bs-docs-nav .navbar-nav>li>a {
-    font-weight: 500;
-    color: #fff
+.wp-nav .navbar-brand{
+    color:#20B585; 
+    font-weight:bold;
+    font-size: 22px;
 }
-.bs-docs-nav .navbar-nav>li>a:hover,
-.bs-docs-nav .navbar-nav>.active>a,
-.bs-docs-nav .navbar-nav>.active>a:hover {
-    color: #463265;
-    background-color: #fcfcfc
-}
-.bs-docs-nav .navbar-toggle .icon-bar {
-    background-color: #fff
-}
-.bs-docs-nav .navbar-header .navbar-toggle {
-    border-color: #fff
+.wp-nav .navbar-toggle .icon-bar{
+    background:#20B585;
 }
 
 #main{
