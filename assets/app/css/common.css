@@ -20,6 +20,10 @@ a:hover,a:active{
 .wp-nav .navbar-toggle .icon-bar{
     background:#20B585;
 }
+.wp-nav .active {
+    color: #20B585;
+    background:#f8f8f8;
+}
 
 #main{
     padding-top:80px;
