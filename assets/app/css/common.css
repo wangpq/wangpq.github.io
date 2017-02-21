@@ -126,7 +126,7 @@ a:hover,a:active{
     font-family:Microsoft YaHei ,SimSun,Arial,Helvetica,sans-serif;
     line-height:1.8;
 }
-.article p:first-of-type {
+#infoMe .article p:first-of-type {
 	color: #b28a00!important;
 	font-size: 16px;
 }
@@ -139,6 +139,15 @@ a:hover,a:active{
     width:auto;
     max-width:100%;
 }
+.article p a,
+.article p a:visited{
+    color: #007ACC;
+}
+.article p a:hover,
+.article p a:active{
+    color: #a00;
+}
+
 /* 页脚 */
 footer{
 	padding-top: 20px;
