@@ -134,6 +134,7 @@ a:hover,a:active{
     width:100%;
     margin:0 auto;
     display: block;
+    background: url(../images/loading.gif) center certer no-repeat;
 }
 .article p img.auto{
     width:auto;
