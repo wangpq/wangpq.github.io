@@ -83,8 +83,9 @@ function WpAnimate(options){
 
 var App=function(){
     $(function() {
-        $("img.lazy").lazyload({
-            effect : "fadeIn"
+        $("img[data-original]").lazyload({
+            effect : "fadeIn",
+			placeholder : "http://wangpq.github.io/assets/app/images/loading.gif"
         });
 
         new WpAnimate({
