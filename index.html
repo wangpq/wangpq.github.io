@@ -107,9 +107,9 @@ var _hmt = _hmt || [];
 			    <dt class="hd">分类</dt>
 			    <dd class="bd">
 				    <nav>
-					    <a href="#vuejs">Vue.js</a>
-					    <a href="#react">react</a>
-					    <a href="#angularjs">angularjs</a>
+					    <a data-track="点击vuejs"  href="#vuejs">Vue.js</a>
+					    <a data-track="点击react"  href="#react">react</a>
+					    <a data-track="点击angularjs" href="#angularjs">angularjs</a>
 					  </nav>
 				</dd>
 				</dt>
@@ -181,6 +181,10 @@ var _hmt = _hmt || [];
 <script src="js/app.min.js"></script>
 <script type="text/javascript">
 _hmt.push(['_trackPageview', window.location.href]);
+$("[data-track]").on("click", function() {
+  var label = $(this).data("track");
+  window._hmt && window._hmt.push(['_trackEvent', label, 'click']);
+});
 </script>
 </body>
 </html>

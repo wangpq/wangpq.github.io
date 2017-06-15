@@ -103,8 +103,8 @@ var _hmt = _hmt || [];
 			    <dt class="hd">分类</dt>
 			    <dd class="bd">
 				    <nav>
-					    <a href="#frontendSkills">前端技能图</a>
-                        <a href="#youdao">有道笔记分享</a>
+					    <a data-track="点击前端技能图" href="#frontendSkills">前端技能图</a>
+                        <a data-track="点击有道笔记分享" href="#youdao">有道笔记分享</a>
 					</nav>
 				</dd>
 			</dl>
@@ -166,6 +166,11 @@ var _hmt = _hmt || [];
 <script src="js/app.min.js"></script>
 <script type="text/javascript">
 _hmt.push(['_trackPageview', window.location.href]);
+
+$("[data-track]").on("click", function() {
+  var label = $(this).data("track");
+  window._hmt && window._hmt.push(['_trackEvent', label, 'click']);
+});
 </script>
 </body>
 </html>
